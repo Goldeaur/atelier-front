@@ -1,0 +1,39 @@
+.player-card {
+  height: 170px;
+  width: auto;
+
+  margin: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.card-image {
+  object-fit: cover;
+  object-position: top;
+  width: 220px;
+  padding: 0;
+  position: absolute;
+}
+
+.player-title {
+  color: #F2753B;
+  font-family: Montserrat;
+  margin-top: 40px;
+}
+
+.player-item{
+  color: black;
+  opacity: 30%;
+  font-family: Mulish;
+}
+
+.value{
+  color: #F2753B;
+  font-family: Montserrat;
+  font-size: small;
+  opacity: 100;
+}
+
+
+
+

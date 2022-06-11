@@ -1,0 +1,88 @@
+.background {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: url(../../../assets/Background.jpg) no-repeat center fixed;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+  min-height: 100%;
+  height: auto;
+}
+
+.detail-card {
+  margin-top: 3%;
+  height: auto;
+  width: 100%;
+  // TODO why not working this way ?
+  //overflow-Y : hidden;
+  //overflow-x: visible;
+
+}
+.country-flag{
+  witdh: 200px;
+  height: 150px;
+  object-fit: fill;
+  object-position: top;
+  padding: 0;
+}
+
+.player-image {
+  width: 492px;
+  height: auto;
+  margin-left: -18vh;
+  position: absolute;
+}
+
+.detail-title {
+  color: #F2753B;
+  font-family: Montserrat;
+}
+
+.carreer-title {
+  color: #F2753B;
+  font-family: Montserrat;
+}
+
+.firstname {
+  font-size: clamp(30px, 6vw, 1000px);
+  font-weight: bold;
+  color: white;
+  text-shadow: -2px -2px 0 #F2753B, 2px -2px 0 #F2753B, -2px 2px 0 #F2753B, 2px 2px 0 #F2753B;
+}
+
+.lastname {
+  font-size: clamp(30px, 8vw, 1000px);
+  margin-top: -5vh;
+}
+
+.title-value{
+  font-size: small;
+}
+
+.detail-item{
+  color: black;
+  opacity: 30%;
+  margin-top: 40px;
+  font-family: Mulish;
+}
+
+.detail-value{
+  color: #F2753B;
+  font-family: Montserrat;
+  font-size: small;
+  opacity: 100;
+}
+
+.country-code{
+  color: black;
+  font-size: 40px;
+  opacity: 30%;
+  font-family: Mulish;
+}
+
+
+
+
+
+
+
