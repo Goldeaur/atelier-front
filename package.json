@@ -1,6 +1,7 @@
 {
   "name": "front-end",
   "version": "0.0.0",
+  "engines": { "node": "v16.14.0", "npm": "8.12.1" },
   "scripts": {
     "heroku-postbuild": "ng build — prod",
     "ng": "ng",
