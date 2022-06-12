@@ -18,6 +18,7 @@ export class PlayerComponent {
 
 
   onViewPlayerDetails() {
+    console.log("onViewPlayerDetail is called");
     this.router.navigateByUrl(`playerdetails/${this.player.id}`).then();
   }
 }

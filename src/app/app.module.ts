@@ -13,6 +13,11 @@ import {MatTableModule} from "@angular/material/table";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatListModule} from "@angular/material/list";
 import { StatisticsComponent } from './components/statistics/statistics.component';
+import {MatAutocompleteModule} from "@angular/material/autocomplete";
+import { SearchPlayerComponent } from './components/search-player/search-player.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -20,7 +25,8 @@ import { StatisticsComponent } from './components/statistics/statistics.componen
     PlayerComponent,
     Home,
     PlayerDetailComponent,
-    StatisticsComponent
+    StatisticsComponent,
+    SearchPlayerComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +36,11 @@ import { StatisticsComponent } from './components/statistics/statistics.componen
     MatCardModule,
     MatTableModule,
     MatGridListModule,
-    MatListModule
+    MatListModule,
+    MatAutocompleteModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

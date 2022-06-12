@@ -1,6 +1,7 @@
 <div class="background container-fluid">
   <div class="row">
     <div class="container col-lg-6 col-12">
+      <app-search-player></app-search-player>
       <app-player *ngFor="let player of players$ | async" [player]="player">
       </app-player>
     </div>

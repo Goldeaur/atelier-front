@@ -12,8 +12,10 @@ export class StatisticsService {
   constructor(private http: HttpClient) {
   }
 
+  baseUrl = 'https://ateliertennissavary.herokuapp.com';
+
   getStatistics(): Observable<Statistics> {
-    return this.http.get<Statistics>('http://localhost:8081/statistics');
+    return this.http.get<Statistics>(this.baseUrl + '/statistics');
   }
 
 

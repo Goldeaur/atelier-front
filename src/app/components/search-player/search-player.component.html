@@ -1,0 +1,22 @@
+<div class="container position-relative">
+
+
+    <form [formGroup]="searchForm">
+      <div>
+        <label for="findPlayerByName"></label>
+        <input id="findPlayerByName"
+               type="text"
+               aria-label="search player"
+               formControlName="input"
+               placeholder="rechercher un joueur"
+               matInput
+               [matAutocomplete]="auto"
+               class="container input col-12"
+        >
+      </div>
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let player of players$ | async" [value]="player.firstname + ' ' + player.lastname">{{player.firstname}} {{player.lastname}}</mat-option>
+      </mat-autocomplete>
+    </form>
+
+</div>
